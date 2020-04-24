@@ -1,0 +1,160 @@
+<!--This website is used the showcase the research conducted for our Digital
+Technology and Culture Retro History course project. Our subject was the Sega
+Master System, Sega's first attempt into the video game console market in the
+USA.-->
+<!--Research and produce a digital presentation on a classic home videogame console.
+You will work within a small group and be assigned to a specific console. Your
+presentation must explain your assigned console’s development, its cultural impact, and
+its relevance to/influence upon today’s gaming industry. Presentation must also include
+primary gameplay footage and an annotated bibliography.-->
+
+<!--TO DOS-->
+<!--Addd a 2nd array of logos and use css animations to create a marquee for box art
+add text to first Page, add more gameplay footage
+add diagram functionality and begin work on 2nd page-->
+
+<!DOCTYPE html>
+<html lang="en" id="home">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>SegaMasterSystem:The Challenge Will Always Be There</title>
+    <link rel="stylesheet" type='text/css' href='stylesheet.css'>
+  </head>
+
+  <body id="start">
+    <!--This will be the wrapper for something-->
+    <div class="wrapper">
+      <!--Intro text box-->
+      <div id="intrext">
+        <p>Originally released as the Sega Mark III to the Japanese market in 1985,
+          the Sega Master System was Sega's answer to the juggernaut that was the
+          Nintendo Entertainment System. Despite failing to topple Nintendo's iron grip
+          on the market in Japan and the United States, the Sega Master System did
+          prove Sega's ability to compete in international markets, such as Brazil
+          and Europe.</p>
+      </div>
+      <!--Wrap for the gif etc.-->
+      <div class="displaywrap">
+        <div class="gametainer"><img id="gameplay" src="images/sonic2.gif"></div>
+        <div class="static"><img id="change" src="images/static.gif"></div>
+        <div class="boxart"><img id="gamebox" src="images/sonicbox.jpg"></div>
+        <img id="smsconsl" src="images/sms.png">
+      </div>
+      <img id="smslogo" src="images/syslogo.png">
+      <div class="slidebg"></div>
+    </div>
+
+    <div class="infobox">
+      <img class="opaque" src="images/darkbg.png">
+      <h1>Advertising</h1>
+      <div class="vidiv">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/NWNU_4vxEnw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="tri"></div>
+    </div>
+    <!--Chrome had sound muted for autoplay to kill ads, this snippet of code
+    (provided by "olafwempe.com") tricks the browser by playing a second
+    of autoplay audio, which allows autoplay videos to play *NO LONGER WORKS HERE
+    <iframe src="audio/silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+    <audio autoplay controls id="sboot">
+        <source src="audio/bootaudio.mp3" type="audio/mpeg">
+    </audio>-->
+    <div class="infobox">
+      <img class="opaque" src="images/darkbg.png">
+      <h1>Development</h1>
+      <div class="carousel">
+        <div class="last">&#10094;</div>
+        <div class="text">
+          <p class="wtext" id="developtext">In the early 1980s Sega Enterprises (a merger between
+            Hawaii based coin-op company Sega Corporation and import company Rosen
+            Enterprises) was mainly in the business of producing arcade games.
+            However, as the arcade world began to dwindle in popularity, the
+            company shifted attention to home gaming consoles, as per the advice
+            given by the Hayao Nakayama, president of Sega at the time. </p>
+        </div>
+        <div onclick="changeDevText()" class="next">&#10095;</div>
+      </div>
+      <div class="infoimg">
+        <img id="devpics" src="images/Oldlogo.png" style="width:100%; height:100%;" alt="Slideshow showcasing images related to text on the development of the Sega Master System">
+      </div>
+      <div class="tri"></div>
+    </div>
+
+    <div class="infobox">
+      <img class="opaque" src="images/darkbg.png">
+      <h1>Cultural Impact</h1>
+      <div class="carousel">
+        <div class="last">&#10094;</div>
+        <div class="text">
+          <p class="wtext" id="impacttext">When the Master System came out, it
+            was already a technically good system for its time, and was able to
+            enjoy most of its success in Europe from 1987 to 1996 after taking
+            the opportunity to reach towards the European market after seeing
+            that Nintendo has been neglecting that particular region. Nintendo’s
+            marketing was not able to capture the general audience in Europe at
+            the release of the NES in the mid-80s due to improper market management.</p>
+        </div>
+        <div onclick="changeImpText()" class="next">&#10095;</div>
+      </div>
+      <!--work in progress<div class="infoimg">
+        <img src="images/smarkIII.png" style="width:100%; height:100%;" alt="Sega SG-1000 Mark III, the first iteration of what would eventually become the Sega Master System">
+      </div>-->
+      <div class="tri"></div>
+    </div>
+
+    <div class="infobox">
+      <img class="opaque" src="images/darkbg.png">
+      <h1>Legacy</h1>
+      <div class="carousel">
+        <div class="last">&#10094;</div>
+        <div class="text">
+          <p class="wtext" id="legacytext">Nintendo already having a strong hold
+            of the market in North America and Japan, the Sega Master System
+            found greater success in the European and Brazilian markets. Even
+            so, the dominance of Nintendo and with Sega as a distant runner up
+            in the wake of Atari’s downfall, marked a shift away from an industry
+            led by American game companies towards Japanese game companies.
+            However, with greater marketing, a lower cost than Nintendo’s
+            console, and a larger collection of games than were released in North
+            America, the Sega Master System was the popular system of the time in Europe,
+            selling nearly 1.75 million consoles in 1991 alone (Sega Retro).</p>
+        </div>
+        <div onclick="changeLegText()" class="next">&#10095;</div>
+      </div>
+      <!--work in progress<div class="infoimg">
+        <img src="images/smarkIII.png" style="width:100%; height:100%;" alt="Sega SG-1000 Mark III, the first iteration of what would eventually become the Sega Master System">
+      </div>-->
+      <div class="tri"></div>
+    </div>
+    <div class="infobox">
+      <img class="opaque" src="images/darkbg.png">
+      <h1>Bibliography</h1>
+      <p class="wtext">Henry Sissac - Site Developer, Console Development Research, Gameplay Footage<br>
+        "Bruce Lowry: The Man That Sold the NES". Game Informer. GameStop. 12 (110): 102–103. June 2002.<br>
+        Horowitz, Ken (December 5, 2006). "Interview: Mark Cerny". Sega-16. Ken Horowitz. Archived from the original on October 17, 2014. Retrieved March 5, 2020.<br>
+        Pettus, Sam, et al. Service Games: The Rise and Fall of SEGA: Enhanced Edition. Smashwords Edition, 2013.<br>
+        "Rosen Enterprises". Sega Retro, 2020, https://segaretro.org/Rosen_Enterprises.<br>
+        "Sega Corporation | Company History, Consoles, & Games". Encyclopedia Britannica, 2020, https://www.britannica.com/topic/Sega-Corporation.<br>
+        "SC-3000 Technical specifications" (in Japanese). Sega Corporation. Archived from the original on October 6, 2014. Retrieved March 5, 2020.<br><br>
+        Quinn Tran - Cultural Impact Research<br>
+        Nostalgia Nerd. “Sega Master System Story”. YouTube, commentary by Peter Leigh, 30 Oct. 2016, https://www.youtube.com/watch?v=ssOxXKPSNmM. <br>
+        Sega Retro. “History of the Sega Master System.” Sega Retro, Sega Retro, 15 Dec. 2019, segaretro.org/History_of_the_Sega_Master_System.<br><br>
+        Joel Clapp - Legacy Research, Gameplay Footage, Video Producer<br>
+        Kohler, Chris. “The Untold Story of How Sega Nearly Won the Console Wars.” Wired, Conde Nast, 3 June 2017, www.wired.com/2014/05/console-wars-book-sega/.<br>
+        Sega Retro. “History of the Sega Master System.” Sega Retro, Sega Retro, 15 Dec. 2019, segaretro.org/History_of_the_Sega_Master_System.<br>
+        Smith, Ernie. “Big in Brazil: Sega's Unexpected Second Life.” Tedium, tedium.co/2015/07/16/sega-master-system-brazil/.<br>
+        Smith, Ernie. “Brazil Is an Alternate Video Game Universe Where Sega Beat Nintendo.” Atlas Obscura, Atlas Obscura, 4 Oct. 2018, www.atlasobscura.com/articles/brazil-is-a-video-game-alternate-universe-where-sega-beat-nintendo.
+
+</p>
+      <div class="tri"></div>
+    </div>
+
+    <div class="loadscreen" onmouseover="stopScroll()" onmouseout="scrollOn()">
+      <video id="loadvid" autoplay muted>
+        <source src="images/bootloader2.mp4">
+      </video>
+    </div>
+    <script language="JavaScript" type="text/javascript" src="sms.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  </body>
+</html>
